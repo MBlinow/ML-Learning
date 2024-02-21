@@ -1,0 +1,2 @@
+Bigram language model.  Looks at two characters at a time,  looking at one and trying to figure out what would come next.
+	Iterating over characters provides information about likely char > next char pairings.  Also special case for start and end characters as an additional piece of information

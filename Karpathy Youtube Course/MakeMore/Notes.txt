@@ -1,0 +1,19 @@
+Got the bigram model working.  
+Now working on efficiency and upgrades.
+
+Tensor manipulations are critical for setting up data and setting up models efficiently
+
+We'll want to get the sum of rows
+
+https://pytorch.org/docs/stable/notes/broadcasting.html
+tensors are broadcastable if each has at least 1 dimension., 
+torch broadcasting allows a mathematical operation to be run between two arrays, this core functionality comes from numpy.
+When a one of the member arrays in an operation has a dimension of 1, this dimension is functionally expanded to match the 
+corresponding dimension on the other array so that logic can be applied.
+Broadcasting and it's limitations will be important to understand to avoid bugs, should do some focused study on that specifically.
+
+Using keepdim in the example preserves the second dimension of the array.
+Broadcasting does work when a dimension is undefined, but at that point it isn't clear which dimension the data provided is representing.
+Providing the 1d array is treated as a list of rows rather than columns essentially, and numpy fills out the column dimension rather than rows.
+
+Saved spot on youtube vid: https://youtu.be/PaCmpygFfXo?si=sSswIqfcCrmyGLiq&t=3017

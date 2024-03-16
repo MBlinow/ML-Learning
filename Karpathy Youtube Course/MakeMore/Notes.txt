@@ -16,4 +16,11 @@ Using keepdim in the example preserves the second dimension of the array.
 Broadcasting does work when a dimension is undefined, but at that point it isn't clear which dimension the data provided is representing.
 Providing the 1d array is treated as a list of rows rather than columns essentially, and numpy fills out the column dimension rather than rows.
 
-Saved spot on youtube vid: https://youtu.be/PaCmpygFfXo?si=sSswIqfcCrmyGLiq&t=3017
+Saved spot on youtube vid: https://youtu.be/PaCmpygFfXo?si=sSswIqfcCrmyGLiq&t=3926
+
+Maximum Likelihood Estimation
+
+Model smoothing:
+Add some base value to probabilities to prevent 0 likelihood outcomes,
+which can overly restrict potential outputs.
+Adding small value like 1 can allow some probability for less common results
